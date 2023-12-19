@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="saveuser" method="post">
+        <div class="form-group">
+          <label for="jmeno">Jméno</label>
+          <input type="text" class="form-control" id="jmeno" name="jmeno" placeholder="Jméno">
+        </div>
+        <div class="form-group">
+          <label for="prijmeni">Příjmení</label>
+          <input type="text" class="form-control" id="prijmeni" name="prijmeni" placeholder="Příjmení">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Vložit</button>
+      </form>
+
+      <form action="/getvar" method="get">
+        <input type="text" name="jmeno">
+        <input type="submit" value="Odeslat">
+      </form>
+</body>
+</html>
